@@ -1,0 +1,11 @@
+@import "addons.scss";
+@import "simpleclienttheme.scss";
+
+/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
+/* The actual styles should be defined in simpleclienttheme.scss */
+.simpleclienttheme {
+  @include addons;
+
+  // Include simpleclienttheme theme styles in your theme
+  @include simpleclienttheme;
+}

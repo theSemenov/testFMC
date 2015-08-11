@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/">
+    
+    <Resource name="BeanManager" 
+        auth="Container"
+        type="javax.enterprise.inject.spi.BeanManager"
+        factory="org.jboss.weld.resources.ManagerObjectFactory" />
+     
+    <Environment name="SimpleClient/remote-url"
+		value="${context.protocol.remote-url}" type="java.lang.String" override="false" />
+    
+    <Environment name="SimpleClient/remote-port"
+		value="${context.protocol.remote-port}" type="java.lang.String" override="false" />
+    
+    <Environment name="SimpleClient/remote-key"
+		value="${context.protocol.remote-key}" type="java.lang.String" override="false" />
+    
+    <Environment name="SimpleClient/remote-login"
+		value="${context.protocol.remote-login}" type="java.lang.String" override="false" />
+    
+     <Environment name="SimpleClient/remote-password"
+		value="${context.protocol.remote-password}" type="java.lang.String" override="false" />
+     
+      <Environment name="SimpleClient/command-prefix"
+		value="${context.protocol.command-prefix}" type="java.lang.String" override="false" />
+ </Context>

@@ -1,0 +1,11 @@
+Предварительная настройка(необходима после mvn clean)
+mvn compile vaadin:compile vaadin:update-widgetset vaadin:compile-theme -e
+
+Запуск приложения
+mvn war:exploded tomcat7:run-war-only
+
+сборка приложения
+mvn package
+
+Отладка -добавить параметры vm:
+-Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=4001,suspend=y
